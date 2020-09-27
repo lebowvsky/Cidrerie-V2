@@ -1,0 +1,30 @@
+@use '../../styles/variables'as v;
+@use '../../styles/mixins'as m;
+
+.hero {
+  position: relative;
+  z-index: 0;
+  height: v.$mobile-menu-wrapper-height;
+  width: 100%;
+  margin-top: v.$header-height;
+  background-image: url(./assets/images/home/hero_bckgd_copy.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  .h-article {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    max-width: 800px;
+    border: 3px solid v.$white;
+    padding: 10px 20px;
+
+    .ha-title {
+      font-size: v.$h2;
+    }
+
+    .ha-text {
+      font-size: v.$p;
+    }
+  }
+}

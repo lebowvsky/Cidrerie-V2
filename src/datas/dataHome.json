@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "La ferme",
+    "background": "hero_bckgd.jpg",
+    "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dolor suscipit quas porro at harum delectus modi aspernatur sapiente? Sapiente dicta voluptas unde. Ex, atque. Magnam iure doloribus sequi veniam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore itaque earum accusamus quo nesciunt est vitae provident libero suscipit iure fugit magnam nam, voluptates eum eos, dolores rem fugiat quae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officiis amet ab, sint voluptatum, vero fugit placeat, asperiores aspernatur assumenda quasi incidunt ipsam hic a labore odit! Placeat, et perspiciatis."
+  },
+  "about": {
+    "title": "À propos de nous",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ex porro voluptates unde quia, dolore ea est recusandae quisquam perferendis incidunt quod officia ab tempora cumque, quidem voluptatum. Beatae, error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, molestias ipsum sapiente culpa, beatae ea tenetur dolor natus corrupti dignissimos modi? Consequuntur, commodi! Tempore fugiat doloribus possimus aliquam eos amet."
+  }
+}
