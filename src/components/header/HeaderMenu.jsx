@@ -48,6 +48,21 @@ const HeaderMenu = () => {
       >
         <span className="hh-line"></span>
       </div>
+
+      <div className={hamburgerClass ? "h-mobile-menu-wrapper visible" : "h-mobile-menu-wrapper"}>
+        <ul className="hmmw-menu">
+          <Link to="/" onClick={handleHamburger}>
+            <li className="hmmwm-item">Accueil</li>
+          </Link>
+          <Link to="/our-products" onClick={handleHamburger}>
+            <li className="hmmwm-item">Nos Produits</li>
+          </Link>
+          <Link to="/contact" onClick={handleHamburger}>
+            <li className="hmmwm-item">Contact</li>
+          </Link>
+        </ul>
+      </div>
+      
     </header>
   );
 };
