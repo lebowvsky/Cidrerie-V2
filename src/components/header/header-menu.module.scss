@@ -19,6 +19,11 @@
     padding: 20px 75px;
   }
 
+  @include m.bpFactory($max: v.$s) {
+    padding: 20px 10px;
+    height: v.$header-height-mobile;
+  }
+
   a {
     text-decoration: none;
     color: v.$white;
@@ -30,6 +35,10 @@
       display: flex;
       cursor: pointer;
 
+      @include m.bpFactory($max: v.$s) {
+        height: 60px;
+      }
+
       .hlw-image {
         height: 100%;
       }
@@ -38,10 +47,14 @@
         height: 100%;
         margin-left: 10px;    
         font-weight: normal;
-        font-size: 1.8rem;
+        font-size: v.$h1;
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
+
+        @include m.bpFactory($max: v.$s) {
+          font-size: v.$h1-mobile;
+        }
 
         .hlwt-high {
           width: 100%;
@@ -49,8 +62,12 @@
 
         .hlwt-low {
           font-family: 'Asmelina Harley';
-          font-size: 2.4rem;
+          font-size: v.$h1-ferme;
           margin-left: 10px;
+
+          @include m.bpFactory($max: v.$s) {
+            font-size: v.$h1-ferme-mobile;
+          }
         }
       }
     }
@@ -92,6 +109,10 @@
 
     @include m.bpFactory($min: v.$l) {
       display: none;
+    }
+
+    @include m.bpFactory($max: v.$s) {
+      width: 30px;
     }
 
     .hh-line {
@@ -168,6 +189,11 @@
       display: none;
     }
 
+    @include m.bpFactory($max: v.$s) {
+      top: v.$header-height-mobile;
+      height: v.$mobile-menu-wrapper-height-mobile;
+    }
+
     &.visible {
       transform: translateX(0);
     }
@@ -179,6 +205,10 @@
       .hmmwm-item {
         margin: 50px 0;
         font-size: 2rem;
+
+        @include m.bpFactory($max: v.$s) {
+          font-size: 1.4rem;
+        }
       }
     }
   }
