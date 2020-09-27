@@ -8,7 +8,21 @@
   font-family: 'ClementePDai Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('ClementePDai Regular'), url('./fonts/ClementePDai-Regular.woff') format('woff');
+  src: local('ClementePDai Regular'), url('./assets/fonts/ClementePDai-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Dream Orphans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Dream Orphans'), url('./assets/fonts/dreamorphans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Asmelina Harley';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Asmelina Harley'), url('./assets/fonts/asmelina_harley.woff') format('woff');
 }
 
 * {
