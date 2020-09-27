@@ -1,0 +1,51 @@
+@use '../../styles/variables'as v;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: v.$white;
+  background-color: v.$primary;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  border-bottom: 3px solid v.$secondary;
+
+  .h-logo-wrapper {
+    height: 150px;
+    background-color: v.$primary;
+    border: 3px solid v.$secondary;
+    position: relative;
+    top: 50%;
+
+    .hlw-image {
+      height: 100%;
+    }
+  }
+
+  .h-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+    a {
+      text-decoration: none;
+      .hm-item {
+        margin: 0 30px;
+        font-family: 'ClementePDai Regular';
+        font-size: 16px;
+        transition: color 350ms ease-in-out;
+        color: v.$white;
+
+        &:hover {
+          color: v.$secondary;
+        }
+      }
+    }
+
+
+  }
+}

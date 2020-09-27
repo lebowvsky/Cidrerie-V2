@@ -1,0 +1,60 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #D9CCC5;
+  background-color: #1f1e1e;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  border-bottom: 3px solid #9D2235;
+}
+.header .h-logo-wrapper {
+  height: 150px;
+  background-color: #1f1e1e;
+  border: 3px solid #9D2235;
+  position: relative;
+  top: 50%;
+}
+.header .h-logo-wrapper .hlw-image {
+  height: 100%;
+}
+.header .h-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+.header .h-menu a {
+  text-decoration: none;
+}
+.header .h-menu a .hm-item {
+  margin: 0 30px;
+  font-family: "ClementePDai Regular";
+  font-size: 16px;
+  transition: color 350ms ease-in-out;
+  color: #D9CCC5;
+}
+.header .h-menu a .hm-item:hover {
+  color: #9D2235;
+}
+
+@font-face {
+  font-family: "ClementePDai Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("ClementePDai Regular"), url("./fonts/ClementePDai-Regular.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(34, 32, 32, 0.99);
+}
+
+/*# sourceMappingURL=style.css.map */
