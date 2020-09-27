@@ -4,11 +4,23 @@ $secondary:  #9D2235;
 $ternary: hsl(0,2%,13%, 100%);
 $white: #D9CCC5;
 
+// Fonts
+$h1: 1.8rem;
+$h1-mobile: 1.2rem;
+$h1-ferme: 2.4rem;
+$h1-ferme-mobile: 1.4rem;
+
+
+
+
+
 
 // Header heights
 $header-height: 150px;
+$header-height-mobile: 100px;
 
 $mobile-menu-wrapper-height: calc(100vh - #{$header-height});
+$mobile-menu-wrapper-height-mobile: calc(100vh - #{$header-height-mobile});
 
 // BreakPoints
 $xs: 360px;

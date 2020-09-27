@@ -17,6 +17,12 @@
     padding: 20px 75px;
   }
 }
+@media only screen and (max-width: 760px) {
+  .header {
+    padding: 20px 10px;
+    height: 100px;
+  }
+}
 .header a {
   text-decoration: none;
   color: #D9CCC5;
@@ -27,6 +33,11 @@
   position: relative;
   display: flex;
   cursor: pointer;
+}
+@media only screen and (max-width: 760px) {
+  .header a .h-logo-wrapper {
+    height: 60px;
+  }
 }
 .header a .h-logo-wrapper .hlw-image {
   height: 100%;
@@ -40,6 +51,11 @@
   align-items: stretch;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 760px) {
+  .header a .h-logo-wrapper .hlw-text {
+    font-size: 1.2rem;
+  }
+}
 .header a .h-logo-wrapper .hlw-text .hlwt-high {
   width: 100%;
 }
@@ -47,6 +63,11 @@
   font-family: "Asmelina Harley";
   font-size: 2.4rem;
   margin-left: 10px;
+}
+@media only screen and (max-width: 760px) {
+  .header a .h-logo-wrapper .hlw-text .hlwt-low {
+    font-size: 1.4rem;
+  }
 }
 .header .h-menu {
   list-style-type: none;
@@ -82,6 +103,11 @@
 @media only screen and (min-width: 1200px) {
   .header .h-hamburger {
     display: none;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .header .h-hamburger {
+    width: 30px;
   }
 }
 .header .h-hamburger .hh-line {
@@ -145,6 +171,12 @@
     display: none;
   }
 }
+@media only screen and (max-width: 760px) {
+  .header .h-mobile-menu-wrapper {
+    top: 100px;
+    height: calc(100vh - 100px);
+  }
+}
 .header .h-mobile-menu-wrapper.visible {
   transform: translateX(0);
 }
@@ -154,6 +186,11 @@
 .header .h-mobile-menu-wrapper .hmmw-menu .hmmwm-item {
   margin: 50px 0;
   font-size: 2rem;
+}
+@media only screen and (max-width: 760px) {
+  .header .h-mobile-menu-wrapper .hmmw-menu .hmmwm-item {
+    font-size: 1.4rem;
+  }
 }
 
 @font-face {
