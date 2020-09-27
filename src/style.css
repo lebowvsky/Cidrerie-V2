@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   color: #D9CCC5;
@@ -193,6 +194,46 @@
   }
 }
 
+.hero {
+  position: relative;
+  z-index: 0;
+  height: calc(100vh - 150px);
+  width: 100%;
+  margin-top: 150px;
+  background-image: url(./assets/images/home/hero_bckgd_copy.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero .h-article {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  max-width: 800px;
+  border: 3px solid #D9CCC5;
+  padding: 10px 20px;
+}
+.hero .h-article .ha-title {
+  font-size: 3rem;
+}
+.hero .h-article .ha-text {
+  font-size: 1.2rem;
+}
+
+.about-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 150px;
+}
+.about-section .as-article {
+  max-width: 800px;
+  margin: 50px;
+  font-size: 1.2rem;
+  text-align: justify;
+  border: 3px solid #D9CCC5;
+  padding: 20px 20px;
+}
+
 @font-face {
   font-family: "ClementePDai Regular";
   font-style: normal;
@@ -219,6 +260,7 @@
 
 body {
   background-color: #222020;
+  color: #D9CCC5;
 }
 
 /*# sourceMappingURL=style.css.map */

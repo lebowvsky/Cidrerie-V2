@@ -3,6 +3,8 @@
 @forward './styles/variables';
 
 @use './components/header/header-menu.module.scss';
+@use './components/hero/hero.module.scss';
+@use './components/about-us/about-us.module.scss';
 
 @font-face {
   font-family: 'ClementePDai Regular';
@@ -33,4 +35,6 @@
 
 body {
   background-color: v.$ternary;
+  color: v.$white;
 }
+
