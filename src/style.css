@@ -1,0 +1,187 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #D9CCC5;
+  background-color: #1f1e1e;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  border-bottom: 3px solid #9D2235;
+  font-family: "Dream Orphans";
+}
+@media only screen and (max-width: 1200px) {
+  .header {
+    padding: 20px 75px;
+  }
+}
+.header a {
+  text-decoration: none;
+  color: #D9CCC5;
+}
+.header a .h-logo-wrapper {
+  height: 110px;
+  background-color: #1f1e1e;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+.header a .h-logo-wrapper .hlw-image {
+  height: 100%;
+}
+.header a .h-logo-wrapper .hlw-text {
+  height: 100%;
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.header a .h-logo-wrapper .hlw-text .hlwt-high {
+  width: 100%;
+}
+.header a .h-logo-wrapper .hlw-text .hlwt-low {
+  font-family: "Asmelina Harley";
+  font-size: 2.4rem;
+  margin-left: 10px;
+}
+.header .h-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+}
+@media only screen and (max-width: 1200px) {
+  .header .h-menu {
+    display: none;
+  }
+}
+.header .h-menu a {
+  text-decoration: none;
+}
+.header .h-menu a .hm-item {
+  margin: 0 30px;
+  font-family: "ClementePDai Regular";
+  font-size: 16px;
+  transition: color 350ms ease-in-out;
+  color: #D9CCC5;
+}
+.header .h-menu a .hm-item:hover {
+  color: #9D2235;
+}
+.header .h-hamburger {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  align-items: center;
+  align-self: flex-end;
+}
+@media only screen and (min-width: 1200px) {
+  .header .h-hamburger {
+    display: none;
+  }
+}
+.header .h-hamburger .hh-line {
+  position: relative;
+  display: block;
+  width: 100% px;
+  height: 3px;
+  background-color: #D9CCC5;
+  border-radius: 3px;
+  transition: background-color 250ms ease-in-out;
+}
+.header .h-hamburger .hh-line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #D9CCC5;
+  border-radius: 3px;
+  transform: translateY(-10px);
+  transition: transform 250ms ease-in-out;
+}
+.header .h-hamburger .hh-line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #D9CCC5;
+  border-radius: 3px;
+  transform: translateY(10px);
+  transition: transform 250ms ease-in-out;
+}
+.header .h-hamburger.cross .hh-line {
+  background-color: #1f1e1e;
+}
+.header .h-hamburger.cross .hh-line::before, .header .h-hamburger.cross .hh-line::after {
+  transform: translateY(0);
+}
+.header .h-hamburger.cross .hh-line::before {
+  transform: rotate(45deg);
+}
+.header .h-hamburger.cross .hh-line::after {
+  transform: rotate(-45deg);
+}
+.header .h-mobile-menu-wrapper {
+  position: fixed;
+  z-index: 1000;
+  top: 150px;
+  left: 0;
+  width: 70%;
+  border-right: 3px solid #9D2235;
+  height: calc(100vh - 150px);
+  background-color: #1f1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+}
+@media only screen and (min-width: 1200px) {
+  .header .h-mobile-menu-wrapper {
+    display: none;
+  }
+}
+.header .h-mobile-menu-wrapper.visible {
+  transform: translateX(0);
+}
+.header .h-mobile-menu-wrapper .hmmw-menu {
+  list-style-type: none;
+}
+.header .h-mobile-menu-wrapper .hmmw-menu .hmmwm-item {
+  margin: 50px 0;
+  font-size: 2rem;
+}
+
+@font-face {
+  font-family: "ClementePDai Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("ClementePDai Regular"), url("./assets/fonts/ClementePDai-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Dream Orphans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dream Orphans"), url("./assets/fonts/dreamorphans-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Asmelina Harley";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Asmelina Harley"), url("./assets/fonts/asmelina_harley.woff") format("woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222020;
+}
+
+/*# sourceMappingURL=style.css.map */

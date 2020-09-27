@@ -1,1 +1,36 @@
+@use './styles/variables' as v;
 
+@forward './styles/variables';
+
+@use './components/header/header-menu.module.scss';
+
+@font-face {
+  font-family: 'ClementePDai Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ClementePDai Regular'), url('./assets/fonts/ClementePDai-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Dream Orphans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Dream Orphans'), url('./assets/fonts/dreamorphans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Asmelina Harley';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Asmelina Harley'), url('./assets/fonts/asmelina_harley.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: v.$ternary;
+}

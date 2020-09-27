@@ -1,0 +1,18 @@
+// Colors
+$primary: hsl(0,2%,12%, 100%);
+$secondary:  #9D2235;
+$ternary: hsl(0,2%,13%, 100%);
+$white: #D9CCC5;
+
+
+// Header heights
+$header-height: 150px;
+
+$mobile-menu-wrapper-height: calc(100vh - #{$header-height});
+
+// BreakPoints
+$xs: 360px;
+$s: 760px;
+$m: 980px;
+$l: 1200px;
+$xl: 1440px;
