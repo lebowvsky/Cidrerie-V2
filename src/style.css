@@ -204,6 +204,12 @@
   background-size: cover;
   background-attachment: fixed;
 }
+@media only screen and (max-width: 760px) {
+  .hero {
+    margin-top: 100px;
+    height: calc(100vh - 100px);
+  }
+}
 .hero .h-article {
   position: absolute;
   right: 50px;
@@ -212,11 +218,30 @@
   border: 3px solid #D9CCC5;
   padding: 10px 20px;
 }
+@media only screen and (max-width: 760px) {
+  .hero .h-article {
+    border: inherit;
+    right: inherit;
+    padding: 10px 30px;
+  }
+}
 .hero .h-article .ha-title {
   font-size: 3rem;
 }
+@media only screen and (max-width: 760px) {
+  .hero .h-article .ha-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
 .hero .h-article .ha-text {
   font-size: 1.2rem;
+}
+@media only screen and (max-width: 760px) {
+  .hero .h-article .ha-text {
+    font-size: 1rem;
+    text-align: justify;
+  }
 }
 
 .about-section {
@@ -232,6 +257,43 @@
   text-align: justify;
   border: 3px solid #D9CCC5;
   padding: 20px 20px;
+}
+.about-section .as-article .asa-title {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 760px) {
+  .about-section .as-article .asa-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+}
+.about-section .as-article .asa-text {
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 760px) {
+  .about-section .as-article .asa-text {
+    font-size: 1rem;
+  }
+}
+
+.under-construction-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.under-construction-section .ucs-under-construction-wrapper {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 760px) {
+  .under-construction-section .ucs-under-construction-wrapper {
+    font-size: 1.2rem;
+  }
+}
+.under-construction-section .ucs-under-construction-wrapper .ucsucw-text span {
+  color: #9D2235;
 }
 
 @font-face {

@@ -1,8 +1,10 @@
 import React from 'react';
 
+import UnderConstruction from '../components/under-construction/UnderConstruction';
+
 const ContactPage = () => {
   return (
-    <p>Contact</p>
+    <UnderConstruction page="'Contact'" />
   )
 }
 
