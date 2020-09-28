@@ -1,7 +1,11 @@
 import React from "react";
 
+import UnderConstruction from "../components/under-construction/UnderConstruction";
+
 const OurProducts = () => {
-  return <p>Nos Produits</p>;
+  return (
+    <UnderConstruction page="'Nos Produits'" />
+  )
 };
 
 export default OurProducts;
