@@ -204,6 +204,13 @@
   background-size: cover;
   background-attachment: fixed;
 }
+@media only screen and (max-width: 1200px) {
+  .hero {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 760px) {
   .hero {
     margin-top: 100px;
@@ -212,17 +219,19 @@
 }
 .hero .h-article {
   position: absolute;
-  right: 50px;
-  bottom: 50px;
+  right: 150px;
+  bottom: 250px;
   max-width: 800px;
-  border: 3px solid #D9CCC5;
   padding: 10px 20px;
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1200px) {
   .hero .h-article {
+    position: inherit;
     border: inherit;
     right: inherit;
-    padding: 10px 30px;
+    bottom: inherit;
+    padding: inherit;
+    margin: 40px;
   }
 }
 .hero .h-article .ha-title {
@@ -230,8 +239,7 @@
 }
 @media only screen and (max-width: 760px) {
   .hero .h-article .ha-title {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
   }
 }
 .hero .h-article .ha-text {
@@ -250,28 +258,61 @@
   width: 100%;
   padding-top: 150px;
 }
-.about-section .as-article {
-  max-width: 800px;
-  margin: 50px;
-  font-size: 1.2rem;
-  text-align: justify;
-  border: 3px solid #D9CCC5;
-  padding: 20px 20px;
+@media only screen and (max-width: 760px) {
+  .about-section {
+    padding-top: 100px;
+  }
 }
-.about-section .as-article .asa-title {
+.about-section .as-article {
+  font-size: 1.2rem;
+  padding: 20px 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 760px) {
+  .about-section .as-article {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+.about-section .as-article .asa-image {
+  border-radius: 50%;
+  border: 3px solid #D9CCC5;
+  height: 150px;
+}
+@media only screen and (max-width: 760px) {
+  .about-section .as-article .asa-image {
+    height: 100px;
+  }
+}
+.about-section .as-article .asa-text-wrapper {
+  text-align: justify;
+  width: 50%;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 760px) {
+  .about-section .as-article .asa-text-wrapper {
+    width: inherit;
+    margin-left: inherit;
+    margin-top: 30px;
+  }
+}
+.about-section .as-article .asa-text-wrapper .asatw-title {
   font-size: 3rem;
 }
 @media only screen and (max-width: 760px) {
-  .about-section .as-article .asa-title {
-    font-size: 1.8rem;
+  .about-section .as-article .asa-text-wrapper .asatw-title {
+    font-size: 1.6rem;
     margin-bottom: 20px;
+    text-align: center;
   }
 }
-.about-section .as-article .asa-text {
+.about-section .as-article .asa-text-wrapper .asatw-text {
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 760px) {
-  .about-section .as-article .asa-text {
+  .about-section .as-article .asa-text-wrapper .asatw-text {
     font-size: 1rem;
   }
 }

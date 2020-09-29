@@ -7,28 +7,60 @@
   width: 100%;
   padding-top: v.$header-height;
 
-  .as-article {
-    max-width: 800px;
-    margin: 50px;
-    font-size: v.$p;
-    text-align: justify;
-    border: 3px solid v.$white;
-    padding: 20px 20px;
+  @include m.bpFactory($max: v.$s) {
+    padding-top: v.$header-height-mobile;
+  }
 
-    .asa-title {
-      font-size: v.$h2;
+  .as-article {
+    font-size: v.$p; 
+    //border: 3px solid v.$white;
+    padding: 20px 20px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    @include m.bpFactory($max: v.$s) {
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .asa-image {
+      border-radius: 50%;
+      border: 3px solid v.$white;
+      height: 150px;
 
       @include m.bpFactory($max: v.$s) {
-        font-size: v.$h2-mobile;
-        margin-bottom: 20px;
+        height: 100px;
       }
     }
 
-    .asa-text {
-      font-size: v.$p;
+    .asa-text-wrapper {
+      text-align: justify;
+      width: 50%;
+      margin-left: 50px;
 
       @include m.bpFactory($max: v.$s) {
-        font-size: v.$p-mobile;
+        width: inherit;
+        margin-left: inherit;
+        margin-top: 30px;
+      }
+
+      .asatw-title {
+        font-size: v.$h2;
+
+        @include m.bpFactory($max: v.$s) {
+          font-size: v.$h2-mobile;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+
+      .asatw-text {
+        font-size: v.$p;
+
+        @include m.bpFactory($max: v.$s) {
+          font-size: v.$p-mobile;
+        }
       }
     }
   }
