@@ -11,6 +11,12 @@
   background-size: cover;
   background-attachment: fixed;
 
+  @include m.bpFactory($max: v.$l) {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
   @include m.bpFactory($max: v.$s) {
     margin-top: v.$header-height-mobile;
     height: v.$mobile-menu-wrapper-height-mobile;
@@ -18,16 +24,18 @@
 
   .h-article {
     position: absolute;
-    right: 50px;
-    bottom: 50px;
+    right: 150px;
+    bottom: 250px;
     max-width: 800px;
-    border: 3px solid v.$white;
     padding: 10px 20px;
 
-    @include m.bpFactory($max: v.$s) {
+    @include m.bpFactory($max: v.$l) {
+      position: inherit;
       border: inherit;
       right: inherit;
-      padding: 10px 30px;
+      bottom: inherit;
+      padding: inherit;
+      margin: 40px;
     }
 
     .ha-title {
@@ -35,7 +43,6 @@
 
       @include m.bpFactory($max: v.$s) {
         font-size: v.$h2-mobile;
-        margin-bottom: 20px;
       }
     }
 
