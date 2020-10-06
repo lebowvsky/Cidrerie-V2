@@ -235,6 +235,7 @@
   }
 }
 .hero .h-article .ha-title {
+  font-family: "ClementePDai Regular";
   font-size: 3rem;
 }
 @media only screen and (max-width: 760px) {
@@ -253,6 +254,7 @@
 }
 
 .about-section {
+  font-family: "ClementePDai Regular";
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -263,56 +265,93 @@
     padding-top: 100px;
   }
 }
-.about-section .as-article {
+.about-section .about-us-last-part {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.about-section .about-us-last-part .aulp-text {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  width: 60%;
+  max-width: 800px;
+}
+
+.as-article {
+  position: relative;
   font-size: 1.2rem;
   padding: 20px 20px;
-  margin-top: 100px;
+  margin-top: 150px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
+.as-article.article-image-left {
+  left: -100px;
+}
+.as-article.article-image-right {
+  right: -100px;
+}
 @media only screen and (max-width: 760px) {
-  .about-section .as-article {
+  .as-article {
     flex-wrap: wrap;
     margin-top: 30px;
   }
 }
-.about-section .as-article .asa-image {
+.as-article .asa-image {
   border-radius: 50%;
   border: 3px solid #D9CCC5;
   height: 150px;
+  width: 150px;
 }
 @media only screen and (max-width: 760px) {
-  .about-section .as-article .asa-image {
+  .as-article .asa-image {
     height: 100px;
+    width: 100px;
   }
 }
-.about-section .as-article .asa-text-wrapper {
+.as-article .asa-text-wrapper {
   text-align: justify;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.as-article .asa-text-wrapper.left {
   margin-left: 50px;
 }
+.as-article .asa-text-wrapper.right {
+  margin-right: 50px;
+}
+.as-article .asa-text-wrapper.right .asatw-title {
+  text-align: end;
+}
 @media only screen and (max-width: 760px) {
-  .about-section .as-article .asa-text-wrapper {
+  .as-article .asa-text-wrapper {
     width: inherit;
     margin-left: inherit;
     margin-top: 30px;
   }
 }
-.about-section .as-article .asa-text-wrapper .asatw-title {
+.as-article .asa-text-wrapper .asatw-title {
   font-size: 3rem;
 }
 @media only screen and (max-width: 760px) {
-  .about-section .as-article .asa-text-wrapper .asatw-title {
+  .as-article .asa-text-wrapper .asatw-title {
     font-size: 1.6rem;
     margin-bottom: 20px;
     text-align: center;
   }
 }
-.about-section .as-article .asa-text-wrapper .asatw-text {
+.as-article .asa-text-wrapper .asatw-text {
   font-size: 1.2rem;
 }
 @media only screen and (max-width: 760px) {
-  .about-section .as-article .asa-text-wrapper .asatw-text {
+  .as-article .asa-text-wrapper .asatw-text {
     font-size: 1rem;
   }
 }

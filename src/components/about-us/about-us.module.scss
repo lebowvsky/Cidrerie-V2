@@ -2,6 +2,7 @@
 @use '../../styles/mixins'as m;
 
 .about-section {
+  font-family: 'ClementePDai Regular';
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -11,57 +12,20 @@
     padding-top: v.$header-height-mobile;
   }
 
-  .as-article {
-    font-size: v.$p; 
-    //border: 3px solid v.$white;
-    padding: 20px 20px;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
+  .about-us-last-part {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    justify-items: center;
+    align-content: center;
 
-    @include m.bpFactory($max: v.$s) {
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .asa-image {
-      border-radius: 50%;
-      border: 3px solid v.$white;
-      height: 150px;
-
-      @include m.bpFactory($max: v.$s) {
-        height: 100px;
-      }
-    }
-
-    .asa-text-wrapper {
-      text-align: justify;
-      width: 50%;
-      margin-left: 50px;
-
-      @include m.bpFactory($max: v.$s) {
-        width: inherit;
-        margin-left: inherit;
-        margin-top: 30px;
-      }
-
-      .asatw-title {
-        font-size: v.$h2;
-
-        @include m.bpFactory($max: v.$s) {
-          font-size: v.$h2-mobile;
-          margin-bottom: 20px;
-          text-align: center;
-        }
-      }
-
-      .asatw-text {
-        font-size: v.$p;
-
-        @include m.bpFactory($max: v.$s) {
-          font-size: v.$p-mobile;
-        }
-      }
+    .aulp-text {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      width: 60%;
+      max-width: 800px;
     }
   }
 }

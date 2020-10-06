@@ -39,6 +39,7 @@
     }
 
     .ha-title {
+      font-family: 'ClementePDai Regular';
       font-size: v.$h2;
 
       @include m.bpFactory($max: v.$s) {
