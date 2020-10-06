@@ -1,0 +1,82 @@
+@use '../../styles/variables'as v;
+@use '../../styles/mixins'as m;
+
+.as-article {
+  position: relative;
+  font-size: v.$p;
+  padding: 20px 20px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.article-image-left {
+    left: -100px;
+  }
+
+  &.article-image-right {
+    right: -100px;
+  }
+
+  @include m.bpFactory($max: v.$s) {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .asa-image {
+    border-radius: 50%;
+    border: 3px solid v.$white;
+    height: 150px;
+    width: 150px;
+
+    @include m.bpFactory($max: v.$s) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .asa-text-wrapper {
+    text-align: justify;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.left {
+      margin-left: 50px;
+    }
+
+    &.right {
+      margin-right: 50px;
+
+      .asatw-title {
+        text-align: end;
+      }
+    }
+
+    @include m.bpFactory($max: v.$s) {
+      width: inherit;
+      margin-left: inherit;
+      margin-top: 30px;
+    }
+
+    .asatw-title {
+      font-size: v.$h2;
+
+      @include m.bpFactory($max: v.$s) {
+        font-size: v.$h2-mobile;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .asatw-text {
+      font-size: v.$p;
+
+      @include m.bpFactory($max: v.$s) {
+        font-size: v.$p-mobile;
+      }
+    }
+  }
+
+}
