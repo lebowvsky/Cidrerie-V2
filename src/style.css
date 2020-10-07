@@ -12,6 +12,14 @@
   line-height: 1.6rem;
   width: 60%;
   max-width: 800px;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 760px) {
+  .about-us-last-part .aulp-text {
+    text-align: justify;
+    width: 100%;
+    font-size: 1.2rem;
+  }
 }
 
 .header {
@@ -264,7 +272,7 @@
 }
 @media only screen and (max-width: 760px) {
   .hero .h-article .ha-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
   }
 }
@@ -295,6 +303,12 @@
   align-items: center;
   justify-content: center;
   width: 80%;
+}
+@media only screen and (max-width: 760px) {
+  .as-article {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
 .as-article.article-image-left {
   left: -100px;
@@ -337,21 +351,31 @@
   flex-direction: column;
   justify-content: center;
 }
-.as-article .asa-text-wrapper.left {
-  margin-left: 50px;
-}
-.as-article .asa-text-wrapper.right {
-  margin-right: 50px;
-}
-.as-article .asa-text-wrapper.right .asatw-title {
-  text-align: end;
-}
 @media only screen and (max-width: 760px) {
   .as-article .asa-text-wrapper {
     width: inherit;
     margin-left: inherit;
-    margin-top: 30px;
+    margin: 20px 0;
   }
+}
+.as-article .asa-text-wrapper.left {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 760px) {
+  .as-article .asa-text-wrapper.left {
+    margin-left: 0;
+  }
+}
+.as-article .asa-text-wrapper.right {
+  margin-right: 50px;
+}
+@media only screen and (max-width: 760px) {
+  .as-article .asa-text-wrapper.right {
+    margin-right: 0;
+  }
+}
+.as-article .asa-text-wrapper.right .asatw-title {
+  text-align: end;
 }
 .as-article .asa-text-wrapper .asatw-title {
   font-size: 3rem;
@@ -368,7 +392,48 @@
 }
 @media only screen and (max-width: 760px) {
   .as-article .asa-text-wrapper .asatw-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.bigImageArticle {
+  width: 70%;
+  position: relative;
+  font-size: 1.2rem;
+  padding: 20px 20px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 980px) {
+  .bigImageArticle {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .bigImageArticle {
+    width: 100%;
+  }
+}
+.bigImageArticle .bIAImage {
+  width: 30%;
+  max-width: 250px;
+  border: 3px solid #D9CCC5;
+  border-radius: 0 8px;
+}
+.bigImageArticle .bIATextWrapper .bIATWTitle {
+  margin: 30px 0 10px 0;
+  font-size: 3rem;
+}
+@media only screen and (max-width: 760px) {
+  .bigImageArticle .bIATextWrapper .bIATWTitle {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .bigImageArticle .bIATextWrapper .bIATWText {
+    font-size: 0.9rem;
+    text-align: justify;
   }
 }
 
