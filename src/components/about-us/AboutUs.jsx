@@ -7,8 +7,7 @@ const AboutUs = () => {
   const { title: titleAbout, text: textAbout } = dataHome.about;
   const { name: imageOwner, alt: imageOwnerAlt } = dataHome.about.image;
   const { process } = dataHome;
-  const { lastText, lastImage } = dataHome.aboutUsLastTextAndPhoto;
-  const lastPhotoPath = require(`../../assets/images/home/${lastImage}`);
+
   return (
     <section className="about-section">
       <ImageAndText
@@ -46,15 +45,6 @@ const AboutUs = () => {
           );
         }
       })}
-
-      <article
-        className="about-us-last-part"
-        style={{
-          backgroundImage: `url(${lastPhotoPath})`,
-        }}
-      >
-        <p className="aulp-text">{lastText}</p>
-      </article>
     </section>
   );
 };

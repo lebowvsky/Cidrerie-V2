@@ -1,0 +1,16 @@
+.about-us-last-part {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  .aulp-text {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 60%;
+    max-width: 800px;
+  }
+}

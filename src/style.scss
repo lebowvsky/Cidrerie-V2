@@ -1,7 +1,10 @@
 @use './styles/variables' as v;
-
 @forward './styles/variables';
 
+// Pages
+@use './pages/home-page/home-page.module.scss';
+
+//Components
 @use './components/header/header-menu.module.scss';
 @use './components/hero/hero.module.scss';
 @use './components/about-us/about-us.module.scss';
