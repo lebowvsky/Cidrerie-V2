@@ -11,6 +11,11 @@
   justify-content: center;
   width: 80%;
 
+  @include m.bpFactory($max: v.$s) {
+    width: 100%;
+    font-size: v.$p-mobile;
+  }
+
   &.article-image-left {
     left: -100px;
 
@@ -51,23 +56,33 @@
     flex-direction: column;
     justify-content: center;
 
+    @include m.bpFactory($max: v.$s) {
+      width: inherit;
+      margin-left: inherit;
+      margin: 20px 0;
+    }
+
     &.left {
       margin-left: 50px;
+
+      @include m.bpFactory($max: v.$s) {
+        margin-left: 0;
+      }
     }
 
     &.right {
       margin-right: 50px;
+
+      @include m.bpFactory($max: v.$s) {
+        margin-right: 0;
+      }
 
       .asatw-title {
         text-align: end;
       }
     }
 
-    @include m.bpFactory($max: v.$s) {
-      width: inherit;
-      margin-left: inherit;
-      margin-top: 30px;
-    }
+    
 
     .asatw-title {
       font-size: v.$h2;

@@ -1,7 +1,6 @@
 import React from "react";
 
 const ImageAndText = ({imageLeft, imagePath, imageRound, imageAlt, title, text}) => {
-  console.log(imageRound);
   if(imageLeft) {
     return (
       <article className="as-article article-image-left">
@@ -11,7 +10,7 @@ const ImageAndText = ({imageLeft, imagePath, imageRound, imageAlt, title, text})
           alt={imageAlt}
         />
         <div className="asa-text-wrapper left">
-          <h2 className="asatw-title">{title}</h2>
+          {/* <h2 className="asatw-title">{title}</h2> */}
           <p className="asatw-text">{text}</p>
         </div>
       </article>
@@ -21,7 +20,7 @@ const ImageAndText = ({imageLeft, imagePath, imageRound, imageAlt, title, text})
       <article className="as-article article-image-right">
         
         <div className="asa-text-wrapper right">
-          <h2 className="asatw-title">{title}</h2>
+          {/* <h2 className="asatw-title">{title}</h2> */}
           <p className="asatw-text">{text}</p>
         </div>
         <img

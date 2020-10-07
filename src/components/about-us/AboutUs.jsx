@@ -2,6 +2,7 @@ import React from "react";
 
 import dataHome from "../../datas/dataHome.json";
 import ImageAndText from "../image-and-text/ImageAndText";
+import BigImageAndText from "../big-image-and-text/BigImageAndText";
 
 const AboutUs = () => {
   const { title: titleAbout, text: textAbout } = dataHome.about;
@@ -10,17 +11,18 @@ const AboutUs = () => {
 
   return (
     <section className="about-section">
-      <ImageAndText
-        imageRound={imageOwner}
+
+      <BigImageAndText
+        imageRegular={imageOwner}
         imageAlt={imageOwnerAlt}
         imagePath="home"
         title={titleAbout}
         text={textAbout}
-        imageLeft
+        imageLeft 
       />
 
       {process.map((elt, index) => {
-        if (index % 2 === 0) {
+        if (index % 2 !== 0) {
           return (
             <ImageAndText
               key={index}
