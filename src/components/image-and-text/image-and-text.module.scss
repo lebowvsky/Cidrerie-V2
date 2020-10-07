@@ -9,13 +9,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 80%;
 
   &.article-image-left {
     left: -100px;
+
+    @include m.bpFactory($max: v.$l) {
+      left: 0;
+    }
   }
 
   &.article-image-right {
     right: -100px;
+
+    @include m.bpFactory($max: v.$l) {
+      right: 0;
+    }
   }
 
   @include m.bpFactory($max: v.$s) {
