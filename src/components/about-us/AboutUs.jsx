@@ -14,30 +14,54 @@ const AboutUs = () => {
   const { process } = dataHome;
 
   useEffect(() => {
-    gsap.from(".article-image-left", {
+    gsap.from(".article-image-left .asa-image", {
       scrollTrigger: {
         trigger: '.article-image-left',
-        start: "top 70%",
-        toggleActions: "restart none none none"
+        start: "top 60%",
+        toggleActions: "play none none none"
       },
       duration: 1,
       x: -200,
-      opacity: 1,
-      stagger: 0.8,
+      opacity: 0,
+      stagger: 1,
+    })
+
+    gsap.from(".asa-text-wrapper.left", {
+      scrollTrigger: {
+        trigger: '.article-image-left',
+        start: "top 60%",
+        toggleActions: "play none none none"
+      },
+      duration: 1,
+      x: 200,
+      opacity: 0,
+      stagger: 1,
     })
   })
 
   useEffect(() => {
-    gsap.from(".article-image-right", {
+    gsap.from(".article-image-right .asa-image", {
       scrollTrigger: {
         trigger: '.article-image-right',
-        start: "top 80%",
-        toggleActions: "restart none none none"
+        start: "top 60%",
+        toggleActions: "play none none none"
       },
       duration: 0.75,
       x: 200,
       opacity: 0,
-      stagger: 0.8,
+      stagger: 1,
+    })
+
+    gsap.from(".asa-text-wrapper.right", {
+      scrollTrigger: {
+        trigger: '.article-image-right',
+        start: "top 60%",
+        toggleActions: "play none none none"
+      },
+      duration: 1,
+      x: -200,
+      opacity: 0,
+      stagger: 1,
     })
   })
 
