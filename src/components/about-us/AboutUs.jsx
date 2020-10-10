@@ -1,24 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import dataHome from "../../datas/dataHome.json";
 import ImageAndText from "../image-and-text/ImageAndText";
 import BigImageAndText from "../big-image-and-text/BigImageAndText";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
   const { title: titleAbout, text: textAbout } = dataHome.about;
   const { name: imageOwner, alt: imageOwnerAlt } = dataHome.about.image;
   const { process } = dataHome;
 
+  useEffect(() => {
+    gsap.from(".article-image-left", {
+      scrollTrigger: {
+        trigger: '.article-image-left',
+        start: "top 70%",
+        toggleActions: "restart none none none"
+      },
+      duration: 1,
+      x: -200,
+      opacity: 1,
+      stagger: 0.8,
+    })
+  })
+
+  useEffect(() => {
+    gsap.from(".article-image-right", {
+      scrollTrigger: {
+        trigger: '.article-image-right',
+        start: "top 80%",
+        toggleActions: "restart none none none"
+      },
+      duration: 0.75,
+      x: 200,
+      opacity: 0,
+      stagger: 0.8,
+    })
+  })
+
   return (
     <section className="about-section">
-
       <BigImageAndText
         imageRegular={imageOwner}
         imageAlt={imageOwnerAlt}
         imagePath="home"
         title={titleAbout}
         text={textAbout}
-        imageLeft 
+        imageLeft
       />
 
       {process.map((elt, index) => {
