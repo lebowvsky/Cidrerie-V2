@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 381 691" version="1.1" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+	<g id="Vinum" fill="#008080" fill-rule="nonzero">
+		<path d="m201.01 290.83l-21.667-1.747c77.92-119.686-68.539 367.65 139.753 367.65l-254.88 0c196.931 0 68.234-480.496 136.794-365.903z" stroke="#008080" stroke-width="8.85"/>
+		<path d="m41.972 130.375c-11.647 183.327 333.681 152.698 291.979 0-115.97 56.169-205.66-73.493-291.979 0z"/>
+		<path d="m48.895 33.549c-137.887 323.941 435.561 312.842 275.882 0" fill="none" stroke="#008080" stroke-width="15"/>
+		<path d="m48.895 33.549c-137.887 323.941 435.561 312.842 275.882 0" fill="none" stroke="#999" stroke-width ="1.87" stroke-linecap="butt" stroke-linejoin="miter"/>
+	</g>
+</svg>

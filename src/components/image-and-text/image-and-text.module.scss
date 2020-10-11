@@ -1,0 +1,125 @@
+@use '../../styles/variables'as v;
+@use '../../styles/mixins'as m;
+
+.as-article {
+  position: relative;
+  font-size: v.$p;
+  padding: 20px 20px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+
+  @include m.bpFactory($max: v.$m) {
+    width: 90%;
+    font-size: v.$p-mobile;
+    padding: 0;
+  }
+
+  @include m.bpFactory($max: v.$s) {
+    width: 90%;
+    font-size: v.$p-mobile;
+  }
+
+  &.article-image-left {
+    left: -100px;
+
+    @include m.bpFactory($max: v.$l) {
+      left: 0;
+    }
+
+    @include m.bpFactory($max: v.$s) {
+      flex-direction: column;
+    }
+  }
+
+  &.article-image-right {
+    right: -100px;
+
+    @include m.bpFactory($max: v.$l) {
+      right: 0;
+    }
+
+    @include m.bpFactory($max: v.$s) {
+      flex-direction: column-reverse;
+    }
+
+  }
+
+  @include m.bpFactory($max: v.$s) {
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .asa-image {
+    border-radius: 50%;
+    border: 3px solid v.$white;
+    height: 150px;
+    width: 150px;
+
+    @include m.bpFactory($max: v.$m) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .asa-text-wrapper {
+    text-align: justify;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include m.bpFactory($max: v.$s) {
+      width: inherit;
+      margin-left: inherit;
+      margin: 20px 0;
+    }
+
+    &.left {
+      margin-left: 50px;
+
+      @include m.bpFactory($max: v.$s) {
+        margin-left: 0;
+      }
+    }
+
+    &.right {
+      margin-right: 50px;
+
+      @include m.bpFactory($max: v.$s) {
+        margin-right: 0;
+      }
+
+      .asatw-title {
+        text-align: end;
+      }
+    }
+
+    
+
+    .asatw-title {
+      font-size: v.$h2;
+
+      @include m.bpFactory($max: v.$s) {
+        font-size: v.$h2-mobile;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .asatw-text {
+      font-size: v.$p;
+
+      @include m.bpFactory($max: v.$m) {
+        font-size: v.$p-pad;
+      }
+
+      @include m.bpFactory($max: v.$s) {
+        font-size: v.$p-mobile;
+      }
+    }
+  }
+
+}

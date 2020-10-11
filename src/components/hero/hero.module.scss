@@ -1,0 +1,59 @@
+@use '../../styles/variables'as v;
+@use '../../styles/mixins'as m;
+
+.hero {
+  position: relative;
+  z-index: 0;
+  height: v.$mobile-menu-wrapper-height;
+  width: 100%;
+  margin-top: v.$header-height;
+  background-image: url(./assets/images/home/hero_bckgd_copy.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  @include m.bpFactory($max: v.$l) {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+
+  @include m.bpFactory($max: v.$s) {
+    margin-top: v.$header-height-mobile;
+    height: v.$mobile-menu-wrapper-height-mobile;
+  }
+
+  .h-article {
+    position: absolute;
+    right: 150px;
+    bottom: 250px;
+    max-width: 800px;
+    padding: 10px 20px;
+
+    @include m.bpFactory($max: v.$l) {
+      position: inherit;
+      border: inherit;
+      right: inherit;
+      bottom: inherit;
+      padding: inherit;
+      margin: 40px;
+    }
+
+    .ha-title {
+      font-family: 'ClementePDai Regular';
+      font-size: v.$h2;
+
+      @include m.bpFactory($max: v.$s) {
+        font-size: v.$h2-mobile;
+      }
+    }
+
+    .ha-text {
+      font-size: v.$p;
+
+      @include m.bpFactory($max: v.$s) {
+        font-size: v.$p-mobile;
+        text-align: justify;
+      }
+    }
+  }
+}

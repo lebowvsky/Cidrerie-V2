@@ -1,0 +1,26 @@
+@use '../../styles/variables'as v;
+@use '../../styles/mixins'as m;
+
+.under-construction-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  .ucs-under-construction-wrapper {
+    font-size: 2rem;
+
+    @include m.bpFactory($max: v.$s) {
+      font-size: 1.2rem;
+    }
+
+    .ucsucw-text {
+      
+      span {
+        color: v.$secondary;
+      }
+    }
+  }
+}

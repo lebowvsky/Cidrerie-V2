@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "title": "Des produits d'exception, lorem ipsum dolor...",
+    "background": "hero_bckgd.jpg",
+    "text": ""
+  },
+  "about": {
+    "image": {
+      "name": "guillaume.jpg",
+      "alt": "Guillaume Juttier"
+    },
+    "title": "À propos de nous",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ex porro voluptates unde quia, dolore ea est recusandae quisquam perferendis incidunt quod officia ab tempora cumque, quidem voluptatum. Beatae, error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, molestias ipsum sapiente culpa, beatae ea tenetur dolor natus corrupti dignissimos modi? Consequuntur, commodi! Tempore fugiat doloribus possimus aliquam eos amet."
+  },
+  "process": [
+    {
+      "titleProcess": "",
+      "textProcess": "Pour l’élaboration de tous nos jus et nos cidres, les différentes variétés de pommes sont ramassées dans nos vergers où l’on procède au premier assemblage.",
+      "imageProcess": "apples.jpg",
+      "imageAlt": "Pommes"
+    },
+    {
+      "titleProcess": "",
+      "textProcess": "Dans la foulée ont lieu le tri et le lavage des pommes. Elles sont ensuite râpées et mises dans le pressoir pour un léger cuvage.",
+      "imageProcess": "apples-sorted.jpg",
+      "imageAlt": "Pommes triées"
+    },
+    {
+      "titleProcess": "",
+      "textProcess": "Suite au pressage, les moûts sont mis en cuves et peuvent fermentés tranquillement. Les fermentations sont testées régulièrement, et nous procédons à différents soutirages pour les contrôler.",
+      "imageProcess": "fermentation.jpg",
+      "imageAlt": "Pommes triées Fermentation des pommes"
+    },
+    {
+      "titleProcess": "",
+      "textProcess": "Ce cidre est ensuite mis en bouteille après une filtration et un réensemencement en levure",
+      "imageProcess": "bottling.jpg",
+      "imageAlt": "Embouteillage du cidre"
+    }
+  ],
+  "aboutUsLastTextAndPhoto": {
+    "lastText": "Nous avons souhaité, à travers les étiquettes de tous nos produits, mettre en place une cohérence, un fil conducteur. Afin de lier toutes nos cuvées, chacune a pris le nom d’un oiseau que l’on peut apercevoir aux alentours des vergers et de la cidrerie. Ainsi, vous pourrez choisir entre l’hirondelle, l’aigrette, le grand duc et tant d’autres selon vos goûts et vos envies.",
+    "lastImage": "bottles-bckgd.jpg"
+  }
+}
