@@ -11,8 +11,14 @@
   justify-content: center;
   width: 80%;
 
+  @include m.bpFactory($max: v.$m) {
+    width: 90%;
+    font-size: v.$p-mobile;
+    padding: 0;
+  }
+
   @include m.bpFactory($max: v.$s) {
-    width: 100%;
+    width: 90%;
     font-size: v.$p-mobile;
   }
 
@@ -22,6 +28,10 @@
     @include m.bpFactory($max: v.$l) {
       left: 0;
     }
+
+    @include m.bpFactory($max: v.$s) {
+      flex-direction: column;
+    }
   }
 
   &.article-image-right {
@@ -30,6 +40,11 @@
     @include m.bpFactory($max: v.$l) {
       right: 0;
     }
+
+    @include m.bpFactory($max: v.$s) {
+      flex-direction: column-reverse;
+    }
+
   }
 
   @include m.bpFactory($max: v.$s) {
@@ -43,7 +58,7 @@
     height: 150px;
     width: 150px;
 
-    @include m.bpFactory($max: v.$s) {
+    @include m.bpFactory($max: v.$m) {
       height: 100px;
       width: 100px;
     }
@@ -96,6 +111,10 @@
 
     .asatw-text {
       font-size: v.$p;
+
+      @include m.bpFactory($max: v.$m) {
+        font-size: v.$p-pad;
+      }
 
       @include m.bpFactory($max: v.$s) {
         font-size: v.$p-mobile;

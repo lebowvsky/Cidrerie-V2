@@ -304,9 +304,16 @@
   justify-content: center;
   width: 80%;
 }
+@media only screen and (max-width: 980px) {
+  .as-article {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 0;
+  }
+}
 @media only screen and (max-width: 760px) {
   .as-article {
-    width: 100%;
+    width: 90%;
     font-size: 0.9rem;
   }
 }
@@ -318,12 +325,22 @@
     left: 0;
   }
 }
+@media only screen and (max-width: 760px) {
+  .as-article.article-image-left {
+    flex-direction: column;
+  }
+}
 .as-article.article-image-right {
   right: -100px;
 }
 @media only screen and (max-width: 1200px) {
   .as-article.article-image-right {
     right: 0;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .as-article.article-image-right {
+    flex-direction: column-reverse;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -338,7 +355,7 @@
   height: 150px;
   width: 150px;
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 980px) {
   .as-article .asa-image {
     height: 100px;
     width: 100px;
@@ -390,6 +407,11 @@
 .as-article .asa-text-wrapper .asatw-text {
   font-size: 1.2rem;
 }
+@media only screen and (max-width: 980px) {
+  .as-article .asa-text-wrapper .asatw-text {
+    font-size: 1.1rem;
+  }
+}
 @media only screen and (max-width: 760px) {
   .as-article .asa-text-wrapper .asatw-text {
     font-size: 0.9rem;
@@ -407,7 +429,7 @@
 }
 @media only screen and (max-width: 980px) {
   .bigImageArticle {
-    width: 80%;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -421,13 +443,30 @@
   border: 3px solid #D9CCC5;
   border-radius: 0 8px;
 }
+@media only screen and (max-width: 980px) {
+  .bigImageArticle .bIAImage {
+    margin: auto;
+  }
+}
 .bigImageArticle .bIATextWrapper .bIATWTitle {
   margin: 30px 0 10px 0;
   font-size: 3rem;
 }
+@media only screen and (max-width: 980px) {
+  .bigImageArticle .bIATextWrapper .bIATWTitle {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 760px) {
   .bigImageArticle .bIATextWrapper .bIATWTitle {
     font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .bigImageArticle .bIATextWrapper .bIATWText {
+    font-size: 1.1rem;
+    text-align: justify;
   }
 }
 @media only screen and (max-width: 760px) {

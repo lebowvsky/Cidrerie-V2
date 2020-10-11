@@ -11,7 +11,7 @@
   flex-direction: column;
 
   @include m.bpFactory($max: v.$m) {
-    width: 80%;
+    width: 90%;
   }
 
   @include m.bpFactory($max: v.$s) {
@@ -23,6 +23,10 @@
     max-width: 250px;
     border: 3px solid v.$white;
     border-radius: 0 8px;
+
+    @include m.bpFactory($max: v.$m) {
+      margin: auto;
+    }
   }
 
   .bIATextWrapper {
@@ -31,12 +35,22 @@
       margin: 30px 0 10px 0;
       font-size: v.$h2;
 
+      @include m.bpFactory($max: v.$m) {
+        text-align: center;
+        font-size: v.$h2-pad;
+      }
+
       @include m.bpFactory($max: v.$s) {
         font-size: v.$h2-mobile;
       }
     }
 
     .bIATWText {
+
+      @include m.bpFactory($max: v.$m) {
+        font-size: v.$p-pad;
+        text-align: justify;
+      }
 
       @include m.bpFactory($max: v.$s) {
         font-size: v.$p-mobile;
