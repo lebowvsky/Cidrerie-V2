@@ -21,7 +21,7 @@ const AboutUs = () => {
         toggleActions: "play none none none"
       },
       duration: 1,
-      x: -200,
+      x: -50,
       opacity: 0,
       stagger: 1,
     })
@@ -33,7 +33,7 @@ const AboutUs = () => {
         toggleActions: "play none none none"
       },
       duration: 1,
-      x: 200,
+      x: 50,
       opacity: 0,
       stagger: 1,
     })
@@ -47,7 +47,7 @@ const AboutUs = () => {
         toggleActions: "play none none none"
       },
       duration: 0.75,
-      x: 200,
+      x: 50,
       opacity: 0,
       stagger: 1,
     })
@@ -59,7 +59,7 @@ const AboutUs = () => {
         toggleActions: "play none none none"
       },
       duration: 1,
-      x: -200,
+      x: -50,
       opacity: 0,
       stagger: 1,
     })
