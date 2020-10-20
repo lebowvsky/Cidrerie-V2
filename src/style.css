@@ -224,8 +224,9 @@
   height: calc(100vh - 150px);
   width: 100%;
   margin-top: 150px;
-  background-image: url(./assets/images/home/hero_bckgd_copy.jpg);
+  background-image: url(./assets/images/home/hero_bckgd.jpg);
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
 }
 @media only screen and (max-width: 1200px) {
