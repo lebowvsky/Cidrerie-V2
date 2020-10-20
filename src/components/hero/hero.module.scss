@@ -7,8 +7,9 @@
   height: v.$mobile-menu-wrapper-height;
   width: 100%;
   margin-top: v.$header-height;
-  background-image: url(./assets/images/home/hero_bckgd_copy.jpg);
+  background-image: url(./assets/images/home/hero_bckgd.jpg);
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
 
   @include m.bpFactory($max: v.$l) {
